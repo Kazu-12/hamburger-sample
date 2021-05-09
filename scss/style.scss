@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*======================================
 Foundation
 ========================================*/
@@ -70,18 +71,26 @@ Foundation
     & > h2{
         color: #fff;
         font-weight: bold;
+        font-size: 36px;
         margin-left: 15px;
     }
 }
 
 .p-branch-menu{
     margin: 10px;
-    color: #fff;
+    font-family: roboto;
     &__take-out,&__eat-in{
         width: auto;
         height: 642px;
         background-size: cover;
         background-position: center;
+        display: flex;
+        flex-direction: column;
+        h2{
+            color: #fff;
+            font-size: 40px;
+            margin: 10px;
+        }
     }
     &__take-out{
         background-image: url(../img/take-out.jpg);
@@ -89,5 +98,44 @@ Foundation
     &__eat-in{
         margin-top: 10px;
         background-image: url(../img/eat-in.jpg);
+    }
+    .p-branch-menu__txt{
+        margin-top: auto;
+    }
+    .p-branch-menu__txt-box{
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        color: #3C2A10;
+        margin: 0 10px 10px 10px;
+        font-family: "M+ 1m";
+        h3{
+            font-size: 22px;
+            font-weight: bold;
+            padding: 20px 10px;
+        }
+        dd{
+            font-size: 16px;
+            padding: 0 15px 20px;
+        }
+    }
+}
+
+.p-map{
+    &__back{
+        background-color: #000;
+        height: 690px;
+    }
+    &__txt{
+        position: relative;
+        z-index: 10;
+        color: #fff;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+    &__map{
+        iframe{
+            position: absolute;
+            width: 100%;
+            height: 690px;
+            opacity: 0.5;
+        }
     }
 }
