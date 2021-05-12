@@ -478,20 +478,26 @@ progress {
   opacity: 0.5;
 }
 
+.l-contents__right {
+  display: none;
+}
+
 .l-footer {
   background-color: #9D8670;
   height: 150px;
 }
 
 .p-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   color: #fff;
 }
 
 .p-footer__menu > ul {
   display: flex;
-  justify-content: center;
   list-style: none;
-  padding-top: 50px;
+  padding: 46px 0px;
 }
 
 .p-footer__menu > ul > p {
@@ -501,5 +507,10 @@ progress {
 .p-footer__copy {
   display: flex;
   justify-content: center;
+}
+
+.p-footer__copy > p {
+  font-family: "M+ 1m";
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
