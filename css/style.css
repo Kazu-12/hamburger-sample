@@ -338,7 +338,6 @@ Foundation
 }
 
 .l-contents__right {
-  display: none;
   position: absolute;
   right: 0;
   background-color: #F2EDE9;
@@ -498,14 +497,24 @@ Foundation
   opacity: 0.5;
 }
 
+.c-button__menu-close {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 100%;
+  transform: translateX(-140%);
+}
+
 .c-button__menu-close span {
   position: absolute;
-  background-color: #707070;
+  top: 20px;
+  right: 5px;
   display: block;
-  width: 45px;
+  background-color: #707070;
+  width: 40px;
   height: 5px;
-  top: 35px;
-  right: 20px;
 }
 
 .c-button__menu-close__1 {
