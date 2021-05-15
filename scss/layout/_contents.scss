@@ -1,0 +1,15 @@
+.l-contents{
+    display: flex;
+    &__left{
+        height: 100%;
+    }
+    &__right{
+        display: none;
+        position: absolute;
+        right: 0;
+        //min-height: inherit;
+        background-color: #F2EDE9;
+        z-index: 100;
+        margin-left: auto;
+    }
+}
