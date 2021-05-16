@@ -1,32 +1,20 @@
-@charset "UTF-8";
 /*======================================
 Foundation
 ========================================*/
-@import "./foundation/reset";
+@import "./foundation/base";
 @import "./foundation/mixin";
+@import "./foundation/reset";
 
 /*======================================
-Foundation
+Layout
 ========================================*/
 @import "./layout/header";
 @import "./layout/_contents.scss";
 
-
-
-.c-button__menu{
-    display: flex;
-    justify-content: flex-end;
-    a{
-        width: auto;
-        color: #707070;
-        font-family: roboto;
-        font-weight: bold;
-        font-size: 20px;
-        padding-top: 15px;
-        padding-right: 15px;
-    }
-}
-
+/*======================================
+Object
+========================================*/
+@import "./object/component/_button.scss";
 
 .p-header__title{
     color: #707070;
@@ -87,6 +75,9 @@ Foundation
     background-position: center;
     display: flex;
     align-items: center;
+    @include pc{
+        height: 530px;
+    }
 
     & > h2{
         color: #fff;
@@ -97,10 +88,10 @@ Foundation
 }
 
 .p-branch-menu{
-    margin: 10px;
+    margin: 3%;
     font-family: roboto;
     @include tab{
-        margin: 30px;
+        //margin: 30px;
         ul{
             justify-content: space-around;
             display: flex;
@@ -130,7 +121,7 @@ Foundation
         background-image: url(../img/eat-in.jpg);
         @include tab{
             margin-top: 0;
-            margin-left: 30px;
+            margin-left: 3%;
         }
     }
     .p-branch-menu__txt{
@@ -187,31 +178,6 @@ Foundation
     }
 }
 
-.c-button__menu-close{
-    position: relative;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    top: 20px;
-    left: 100%;
-    transform: translateX(-140%);
-    span{
-        position: absolute;
-        top: 20px;
-        right: 5px;
-        display: block;
-        background-color: #707070;
-        width: 40px;
-        height: 5px;
-    }
-    &__1{
-        transform: rotate(-45deg);
-    }
-    &__2{
-        transform: rotate(45deg);
-    }
-}
-
 .p-sidebar{
     li{
         list-style: none;
@@ -221,6 +187,7 @@ Foundation
         display: block;
         color: #707070;
         text-decoration: none;
+        white-space: nowrap;
     }
     &__menu--main{
         margin-top: 200px;

@@ -2,6 +2,10 @@
 /*======================================
 Foundation
 ========================================*/
+html {
+  font-size: 62.5％;
+}
+
 /*!
  * ress.css • v4.0.0
  * MIT License
@@ -321,7 +325,7 @@ progress {
 }
 
 /*======================================
-Foundation
+Layout
 ========================================*/
 .l-header {
   width: 100%;
@@ -338,7 +342,6 @@ Foundation
 }
 
 .l-contents__right {
-  display: none;
   position: absolute;
   right: 0;
   background-color: #F2EDE9;
@@ -346,12 +349,27 @@ Foundation
   margin-left: auto;
 }
 
+@media (min-width: 1201px) {
+  .l-contents__left {
+    width: 80%;
+  }
+  .l-contents__right {
+    width: 20%;
+    display: block;
+    position: static;
+  }
+}
+
+/*======================================
+Object
+========================================*/
 .c-button__menu {
   display: flex;
   justify-content: flex-end;
 }
 
 .c-button__menu a {
+  display: block;
   width: auto;
   color: #707070;
   font-family: roboto;
@@ -359,6 +377,55 @@ Foundation
   font-size: 20px;
   padding-top: 15px;
   padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .c-button__menu a {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .c-button__menu {
+    position: absolute;
+    left: 80%;
+    padding-left: 40px;
+    z-index: 110;
+  }
+}
+
+.c-button__menu--close {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 100%;
+  transform: translateX(-140%);
+}
+
+.c-button__menu--close span {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: block;
+  background-color: #707070;
+  width: 40px;
+  height: 5px;
+}
+
+.c-button__menu--close__1 {
+  transform: rotate(-45deg);
+}
+
+.c-button__menu--close__2 {
+  transform: rotate(45deg);
+}
+
+@media (min-width: 1201px) {
+  .c-button__menu--close {
+    display: none;
+  }
 }
 
 .p-header__title {
@@ -429,6 +496,12 @@ Foundation
   align-items: center;
 }
 
+@media (min-width: 1201px) {
+  .p-main-visual {
+    height: 530px;
+  }
+}
+
 .p-main-visual > h2 {
   color: #fff;
   font-weight: bold;
@@ -437,14 +510,11 @@ Foundation
 }
 
 .p-branch-menu {
-  margin: 10px;
+  margin: 3%;
   font-family: roboto;
 }
 
 @media (min-width: 768px) {
-  .p-branch-menu {
-    margin: 30px;
-  }
   .p-branch-menu ul {
     justify-content: space-around;
     display: flex;
@@ -484,7 +554,7 @@ Foundation
 @media (min-width: 768px) {
   .p-branch-menu__eat-in {
     margin-top: 0;
-    margin-left: 30px;
+    margin-left: 3%;
   }
 }
 
@@ -544,34 +614,6 @@ Foundation
   opacity: 0.5;
 }
 
-.c-button__menu-close {
-  position: relative;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  top: 20px;
-  left: 100%;
-  transform: translateX(-140%);
-}
-
-.c-button__menu-close span {
-  position: absolute;
-  top: 20px;
-  right: 5px;
-  display: block;
-  background-color: #707070;
-  width: 40px;
-  height: 5px;
-}
-
-.c-button__menu-close__1 {
-  transform: rotate(-45deg);
-}
-
-.c-button__menu-close__2 {
-  transform: rotate(45deg);
-}
-
 .p-sidebar li {
   list-style: none;
   font-family: "M+ 1m";
@@ -581,6 +623,7 @@ Foundation
   display: block;
   color: #707070;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .p-sidebar__menu--main {
