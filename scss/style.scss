@@ -42,12 +42,30 @@ Foundation
     display: flex;
     justify-content: center;
     &__box{
+        position: relative;
+        display: inline-block;
+        &::before{
+            content: "";
+            width: 46px;
+            height: 46px;
+            background-image: url(/img/search.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            position: absolute;
+        }
+    }
+    &__txt{
         background-color: #fff;
         border: 1px solid #000;
         width: 230px;
         height: 46px;
         margin-right: 10px;
+        padding-left: 45px;
         border-radius: 10px;
+        @include tab{
+            width: 396px;
+        }
     }
     &__button{
         background-color: #F2EDE9;
@@ -81,6 +99,13 @@ Foundation
 .p-branch-menu{
     margin: 10px;
     font-family: roboto;
+    @include tab{
+        margin: 30px;
+        ul{
+            justify-content: space-around;
+            display: flex;
+        }
+    }
     &__take-out,&__eat-in{
         width: auto;
         height: 642px;
@@ -93,6 +118,9 @@ Foundation
             font-size: 40px;
             margin: 10px;
         }
+        @include tab{
+            height: 680px;
+        }
     }
     &__take-out{
         background-image: url(../img/take-out.jpg);
@@ -100,12 +128,16 @@ Foundation
     &__eat-in{
         margin-top: 10px;
         background-image: url(../img/eat-in.jpg);
+        @include tab{
+            margin-top: 0;
+            margin-left: 30px;
+        }
     }
     .p-branch-menu__txt{
         margin-top: auto;
     }
     .p-branch-menu__txt-box{
-        background-color: rgba($color: #fff, $alpha: 0.5);
+        background-color: rgba($color: #fff, $alpha: 0.7);
         color: #3C2A10;
         margin: 0 10px 10px 10px;
         font-family: "M+ 1m";
@@ -211,6 +243,7 @@ Foundation
 
 .l-footer{
     background-color: #9D8670;
+    width: 100%;
     height: 150px;
 }
 
