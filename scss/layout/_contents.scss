@@ -5,9 +5,10 @@
     }
     &__right{
         //display: none;
-        position: absolute;
+        position: fixed;
+        overflow-y: auto;
         right: 0;
-        //min-height: inherit;
+        height: 100vh;
         background-color: #F2EDE9;
         z-index: 100;
         margin-left: auto;
@@ -18,6 +19,7 @@
         }
         &__right{
             width: 20%;
+            height: auto;
             display: block;
             position: static;
         }

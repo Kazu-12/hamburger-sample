@@ -342,8 +342,10 @@ Layout
 }
 
 .l-contents__right {
-  position: absolute;
+  position: fixed;
+  overflow-y: auto;
   right: 0;
+  height: 100vh;
   background-color: #F2EDE9;
   z-index: 100;
   margin-left: auto;
@@ -355,6 +357,7 @@ Layout
   }
   .l-contents__right {
     width: 20%;
+    height: auto;
     display: block;
     position: static;
   }
@@ -429,12 +432,31 @@ Object
 }
 
 .p-header__title {
+  height: inherit;
+}
+
+@media (min-width: 1201px) {
+  .p-header__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+}
+
+.p-header__title h1 {
   color: #707070;
   font-family: roboto;
   font-weight: bold;
   font-size: 40px;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 1201px) {
+  .p-header__title h1 {
+    font-size: 64px;
+  }
 }
 
 .p-search {
@@ -627,7 +649,7 @@ Object
 }
 
 .p-sidebar__menu--main {
-  margin-top: 200px;
+  margin: 200px 0px;
   padding: 0 50px;
 }
 
