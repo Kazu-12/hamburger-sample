@@ -3,3 +3,24 @@
     height: 217px;
     background-color: #FFF7EF;
 }
+
+.l-header__title{
+    height: inherit;
+    @include pc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+    & h1{
+        @include pc{
+            font-size: 64px;
+        }
+        color: #707070;
+        font-family: roboto;
+        font-weight: bold;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+}
