@@ -333,6 +333,34 @@ Layout
   background-color: #FFF7EF;
 }
 
+.l-header__title {
+  height: inherit;
+}
+
+@media (min-width: 1201px) {
+  .l-header__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+}
+
+.l-header__title h1 {
+  color: #707070;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1201px) {
+  .l-header__title h1 {
+    font-size: 64px;
+  }
+}
+
 .l-contents {
   display: flex;
 }
@@ -344,11 +372,16 @@ Layout
 .l-contents__right {
   position: fixed;
   overflow-y: auto;
-  right: 0;
+  right: -100%;
   height: 100vh;
   background-color: #F2EDE9;
   z-index: 100;
   margin-left: auto;
+  transition: all 0.3s;
+}
+
+.l-contents__right.open {
+  right: 0;
 }
 
 @media (min-width: 1201px) {
@@ -366,12 +399,13 @@ Layout
 /*======================================
 Object
 ========================================*/
-.c-button__menu {
+.c-button {
   display: flex;
   justify-content: flex-end;
 }
 
-.c-button__menu a {
+.c-button__menu {
+  cursor: pointer;
   display: block;
   width: auto;
   color: #707070;
@@ -383,13 +417,13 @@ Object
 }
 
 @media (min-width: 768px) {
-  .c-button__menu a {
+  .c-button__menu {
     font-size: 34px;
   }
 }
 
 @media (min-width: 1201px) {
-  .c-button__menu {
+  .c-button {
     position: absolute;
     left: 80%;
     padding-left: 40px;
@@ -397,7 +431,7 @@ Object
   }
 }
 
-.c-button__menu--close {
+.c-button__menu-close {
   position: relative;
   cursor: pointer;
   width: 50px;
@@ -407,7 +441,7 @@ Object
   transform: translateX(-140%);
 }
 
-.c-button__menu--close span {
+.c-button__menu-close span {
   position: absolute;
   top: 20px;
   right: 5px;
@@ -417,45 +451,17 @@ Object
   height: 5px;
 }
 
-.c-button__menu--close__1 {
+.c-button__menu-close__1 {
   transform: rotate(-45deg);
 }
 
-.c-button__menu--close__2 {
+.c-button__menu-close__2 {
   transform: rotate(45deg);
 }
 
 @media (min-width: 1201px) {
-  .c-button__menu--close {
+  .c-button__menu-close {
     display: none;
-  }
-}
-
-.p-header__title {
-  height: inherit;
-}
-
-@media (min-width: 1201px) {
-  .p-header__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-  }
-}
-
-.p-header__title h1 {
-  color: #707070;
-  font-family: roboto;
-  font-weight: bold;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 1201px) {
-  .p-header__title h1 {
-    font-size: 64px;
   }
 }
 

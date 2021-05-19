@@ -1,7 +1,8 @@
-.c-button__menu{
+.c-button{
     display: flex;
     justify-content: flex-end;
-    a{
+    &__menu{
+        cursor: pointer;
         display: block;
         width: auto;
         color: #707070;
@@ -22,7 +23,7 @@
     }
 }
 
-.c-button__menu--close{
+.c-button__menu-close{
     position: relative;
     cursor: pointer;
     width: 50px;
