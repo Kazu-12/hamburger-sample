@@ -337,13 +337,20 @@ Layout
 
 .l-contents__right {
   position: fixed;
-  overflow-y: auto;
   right: -100%;
+  width: 100%;
   height: 100vh;
-  background-color: #F2EDE9;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
-  margin-left: auto;
   transition: all 0.3s;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.l-contents__sidebar {
+  overflow-y: auto;
+  background-color: #F2EDE9;
+  z-index: 110;
 }
 
 .l-contents__right.open {
@@ -359,6 +366,9 @@ Layout
     height: auto;
     display: block;
     position: static;
+  }
+  .l-contents__sidebar {
+    height: 100%;
   }
 }
 
@@ -432,6 +442,7 @@ Object
   .c-button {
     position: absolute;
     left: 80%;
+    top: 60px;
     padding-left: 40px;
     z-index: 110;
   }
