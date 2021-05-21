@@ -609,12 +609,24 @@ Object
 }
 
 .p-map__txt {
-  height: 100%;
+  height: 50%;
   position: relative;
   z-index: 10;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   font-family: "M+ 1m";
+}
+
+@media (min-width: 768px) {
+  .p-map__txt {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .p-map__txt {
+    width: 65%;
+  }
 }
 
 .p-map__txt h3 {
