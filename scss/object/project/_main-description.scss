@@ -1,0 +1,13 @@
+.p-main-description{
+    color: #3C2A10;
+    font-family: "M+ 1m";
+    & h2{
+        font-size: 28px;
+        font-weight: bold;
+        margin: 30px 20px;
+    }
+    & p{
+        font-size: 16px;
+        margin: 20px;
+    }
+}

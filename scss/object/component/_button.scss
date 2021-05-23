@@ -14,6 +14,9 @@
         @include tab{
             font-size: 34px;
         }
+        @include pc{
+            cursor: auto;
+        }
     }
     @include pc{
         position: absolute;

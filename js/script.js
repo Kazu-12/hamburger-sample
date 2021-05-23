@@ -1,6 +1,6 @@
 $(function side_bar(){
     $('.c-button__menu').on('click',function () {
-        if($(window).width() < 769) {
+        if($(window).width() < 1201) {
             $(".l-contents__right").toggleClass('open');
             $("body").toggleClass('open');
         }
