@@ -40,5 +40,10 @@
         height: inherit;
         width: 100%;
         z-index: 100;
+        @include tab{
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
 }

@@ -1,8 +1,15 @@
 .c-menu-card{
     background-color: #3C2B1C;
     margin: 20px;
+    @include tab{
+        display: flex;
+    }
     img{
         width: 100%;
+        object-fit: cover;
+        @include tab{
+            width: 50%;
+        }
     }
     &__description{
         color: #fff;
@@ -11,17 +18,17 @@
     h3{
         font-size: 20px;
         font-weight: bold;
-        margin: 20px;
+        margin: 5%;
     }
     h4{
         font-size: 16px;
         font-weight: bold;
-        margin: 10px 20px;
+        margin: 10px 5%;
     }
     &__txt{
         font-size: 16px;
-        font-weight: regular;
-        margin: 10px 20px;
+        font-weight: 400;
+        margin: 10px 20% 10px 5%;
     }
     &__detail-btn{
         width: 100%;

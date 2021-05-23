@@ -469,8 +469,21 @@ Object/component
   margin: 20px;
 }
 
+@media (min-width: 768px) {
+  .c-menu-card {
+    display: flex;
+  }
+}
+
 .c-menu-card img {
   width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .c-menu-card img {
+    width: 50%;
+  }
 }
 
 .c-menu-card__description {
@@ -481,19 +494,19 @@ Object/component
 .c-menu-card h3 {
   font-size: 20px;
   font-weight: bold;
-  margin: 20px;
+  margin: 5%;
 }
 
 .c-menu-card h4 {
   font-size: 16px;
   font-weight: bold;
-  margin: 10px 20px;
+  margin: 10px 5%;
 }
 
 .c-menu-card__txt {
   font-size: 16px;
-  font-weight: regular;
-  margin: 10px 20px;
+  font-weight: 400;
+  margin: 10px 20% 10px 5%;
 }
 
 .c-menu-card__detail-btn {
@@ -680,6 +693,14 @@ Object/project
   height: inherit;
   width: 100%;
   z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .p-main-visual--archive--black-back {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .p-map__back {
