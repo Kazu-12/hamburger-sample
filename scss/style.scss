@@ -17,8 +17,82 @@ Object
 ========================================*/
 @import "./object/component/_button.scss";
 @import "./object/project/branch-menu";
+@import "./object/project/header-title";
 @import "./object/project/main-visual";
 @import "./object/project/map";
 @import "./object/project/p-footer";
 @import "./object/project/search";
 @import "./object/project/sidebar";
+
+.p-main-description{
+    color: #3C2A10;
+    font-family: "M+ 1m";
+    & h2{
+        font-size: 28px;
+        font-weight: bold;
+        margin: 30px 20px;
+    }
+    & p{
+        font-size: 16px;
+        margin: 20px;
+    }
+}
+
+.c-menu-card{
+    background-color: #3C2B1C;
+    margin: 20px;
+    img{
+        width: 100%;
+    }
+    &__description{
+        color: #fff;
+        font-family: "M+ 1m";
+    }
+    h3{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    h4{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px 20px;
+    }
+    &__txt{
+        font-size: 16px;
+        font-weight: regular;
+        margin: 10px 20px;
+    }
+    &__detail-btn{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            background-color: #fff;
+            color: #707070;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 14px 50px;
+            border-radius: 25px;
+            text-align: center;
+        }
+    }
+}
+
+.p-pagination{
+    height: 15vh;
+    display: flex;
+    align-items: flex-end;
+    margin: 20px;
+    & ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        color: #707070;
+        font-family: "M+ 1m";
+        font-size: 16px;
+     }
+}
