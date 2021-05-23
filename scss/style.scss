@@ -16,6 +16,7 @@ Layout
 Object/component
 ========================================*/
 @import "./object/component/_button.scss";
+@import "./object/component/c-menu-card";
 
 /*======================================
 Object/project
@@ -26,104 +27,7 @@ Object/project
 @import "./object/project/main-visual";
 @import "./object/project/map";
 @import "./object/project/p-footer";
+@import "./object/project/pagination";
 @import "./object/project/search";
 @import "./object/project/sidebar";
 
-.c-menu-card{
-    background-color: #3C2B1C;
-    margin: 20px;
-    img{
-        width: 100%;
-    }
-    &__description{
-        color: #fff;
-        font-family: "M+ 1m";
-    }
-    h3{
-        font-size: 20px;
-        font-weight: bold;
-        margin: 20px;
-    }
-    h4{
-        font-size: 16px;
-        font-weight: bold;
-        margin: 10px 20px;
-    }
-    &__txt{
-        font-size: 16px;
-        font-weight: regular;
-        margin: 10px 20px;
-    }
-    &__detail-btn{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a{
-            background-color: #fff;
-            color: #707070;
-            font-size: 16px;
-            font-weight: bold;
-            padding: 14px 50px;
-            border-radius: 25px;
-            text-align: center;
-        }
-    }
-}
-
-.p-pagination{
-    height: 15vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 20px;
-    & ul{
-        width: 100%;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #707070;
-        font-family: roboto;
-        font-weight: bold;
-        font-size: 16px;
-        @include tab{
-            width: 600px;
-        }
-    }
-    &__nav{
-        display: none;
-        @include tab{
-            display: block;
-        }
-    }
-    &__arrow{
-        a{
-            display: flex;
-            align-items: center;
-        }
-        span{
-            font-weight: 400;
-            @include tab{
-                display: none;
-            }
-        }
-    } 
-    &__num{
-        width: 35px;
-        height: 35px;
-        border: solid;
-        border-color: #707070;
-        display: none;
-        @include tab{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    .current-page{
-        background-color: #3C2B1C;
-        color: #fff;
-    }
-}
