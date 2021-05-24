@@ -466,7 +466,7 @@ Object/component
 
 .c-menu-card {
   background-color: #3C2B1C;
-  margin: 20px;
+  margin: 2% 5%;
 }
 
 @media (min-width: 768px) {
@@ -637,12 +637,12 @@ Object/project
 .p-main-description h2 {
   font-size: 28px;
   font-weight: bold;
-  margin: 30px 20px;
+  margin: 2% 5%;
 }
 
 .p-main-description p {
   font-size: 16px;
-  margin: 20px;
+  margin: 2% 5%;
 }
 
 .p-main-visual {
@@ -682,6 +682,12 @@ Object/project
   background-image: url(../img/archive-main.jpg);
   background-size: auto;
   background-position: 25% 45%;
+}
+
+@media (min-width: 1201px) {
+  .p-main-visual--archive {
+    height: 240px;
+  }
 }
 
 .p-main-visual--archive--black-back {

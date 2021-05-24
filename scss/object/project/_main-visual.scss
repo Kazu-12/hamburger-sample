@@ -31,6 +31,9 @@
     background-image: url(../img/archive-main.jpg);
     background-size:auto;
     background-position: 25% 45%;
+    @include pc{
+        height: 240px;
+    }
     &--black-back{
         display: flex;
         flex-direction: column;
