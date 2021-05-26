@@ -18,6 +18,8 @@ Object/component
 @import "./object/component/_button.scss";
 @import "./object/component/c-menu-card";
 @import "./object/component/quote";
+@import "./object/component/table";
+@import "./object/component/single-button";
 
 /*======================================
 Object/project
@@ -31,148 +33,7 @@ Object/project
 @import "./object/project/pagination";
 @import "./object/project/search";
 @import "./object/project/sidebar";
-
-.p-menu-detail{
-    &__top-visual{
-        width: 100%;
-        object-fit: cover;
-        margin: 10% 0;
-    }
-    &__description1,&__description2{
-        display: flex;
-        justify-content: space-between;
-        p{
-            font-size: 16px;
-            font-family: "M+ 1m";
-            width: 50%;
-            max-height: 45vw;
-            overflow: hidden;
-        }
-        img{
-            align-self: flex-start;
-            width: 45%;
-            object-fit: contain;
-            display: flex;
-        }
-    }
-    &__description2{
-        margin-top: 10%;
-    }
-    &__mid-visual{
-        text-align: center;
-        img{
-            width: 267px;
-            margin: 10% 0;
-            @include tab{
-                width: 581px;
-                margin-bottom: 30%;
-            }
-            @include pc{
-                margin:5%;
-            }
-        }
-    }
-
-    &__img-list{
-        @include tab{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-content: flex-start;
-            flex-wrap: wrap;
-        }
-        img{
-            width: 100%;
-            margin-bottom: 5%;
-            @include tab{
-                width: 49%;
-                margin-bottom: 2%;
-            }
-            @include pc{
-                width: 32%;
-            }
-        }
-    }
-}
-
-.p-single-list{
-    @include tab{
-        padding: 5%;
-    }
-    ul{
-        margin-bottom: 16px;
-    }
-    li{
-        list-style: none;
-        font-size: 16px;
-        font-family: "M+ 1m";
-    }
-    &__num-list{
-        margin-bottom: 60px;
-    }
-    &__num-list--2,&__normal-list--2{
-        padding-left: 5%;
-    }
-}
-
-.p-single-html-code{
-    background-color: #F5F5F5;
-    padding: 40px;
-    p{
-        font-size: 16px;
-        font-family: "M+ 1m";
-    }
-}
-
-.c-table{
-    width: 100%;
-    height: 305px;
-    margin: 40px 0;
-    border-collapse: collapse;
-    background-color: #fff;
-    td{
-        border: solid 1px;
-        font-size: 16px;
-        font-family: "M+ 1m";
-        padding-left: 30px;
-    }
-    &__left{
-        width: 40%;
-    }
-    &__right{
-        width: 60%;
-    }
-    @include tab{
-        &__left{
-            width: 33%;
-        }
-        &__right{
-            width: 67%;
-        }
-    }
-}
-
-.c-single-button{
-    margin-bottom: 10%;
-    width: 100%;
-    height: 81px;
-    border-radius: 20px;
-    border: solid 1px;
-    font-size: 16px;
-    font-family: "M+ 1m";
-    font-weight: bold;
-    color: #3C2A10;
-    background-color: #F2EDE9;
-    @include tab{
-        width: 429px;
-    }
-}
-
-.p-single-page-contents{
-    padding-bottom: 75px;
-    &__txt{
-        font-size: 16px;
-        font-family: "M+ 1m";
-        font-weight: bold;
-    }
-}
+@import "./object/project/main-detail";
+@import "./object/project/single-list";
+@import "./object/project/single-html-code";
+@import "./object/project/single-page-contents";

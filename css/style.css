@@ -542,6 +542,57 @@ Object/component
   padding-top: 10%;
 }
 
+.c-table {
+  width: 100%;
+  height: 305px;
+  margin: 40px 0;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.c-table td {
+  border: solid 1px;
+  font-size: 16px;
+  font-family: "M+ 1m";
+  padding-left: 30px;
+}
+
+.c-table__left {
+  width: 40%;
+}
+
+.c-table__right {
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  .c-table__left {
+    width: 33%;
+  }
+  .c-table__right {
+    width: 67%;
+  }
+}
+
+.c-single-button {
+  margin-bottom: 10%;
+  width: 100%;
+  height: 81px;
+  border-radius: 20px;
+  border: solid 1px;
+  font-size: 16px;
+  font-family: "M+ 1m";
+  font-weight: bold;
+  color: #3C2A10;
+  background-color: #F2EDE9;
+}
+
+@media (min-width: 768px) {
+  .c-single-button {
+    width: 429px;
+  }
+}
+
 /*======================================
 Object/project
 ========================================*/
@@ -1145,57 +1196,6 @@ Object/project
 .p-single-html-code p {
   font-size: 16px;
   font-family: "M+ 1m";
-}
-
-.c-table {
-  width: 100%;
-  height: 305px;
-  margin: 40px 0;
-  border-collapse: collapse;
-  background-color: #fff;
-}
-
-.c-table td {
-  border: solid 1px;
-  font-size: 16px;
-  font-family: "M+ 1m";
-  padding-left: 30px;
-}
-
-.c-table__left {
-  width: 40%;
-}
-
-.c-table__right {
-  width: 60%;
-}
-
-@media (min-width: 768px) {
-  .c-table__left {
-    width: 33%;
-  }
-  .c-table__right {
-    width: 67%;
-  }
-}
-
-.c-single-button {
-  margin-bottom: 10%;
-  width: 100%;
-  height: 81px;
-  border-radius: 20px;
-  border: solid 1px;
-  font-size: 16px;
-  font-family: "M+ 1m";
-  font-weight: bold;
-  color: #3C2A10;
-  background-color: #F2EDE9;
-}
-
-@media (min-width: 768px) {
-  .c-single-button {
-    width: 429px;
-  }
 }
 
 .p-single-page-contents {
