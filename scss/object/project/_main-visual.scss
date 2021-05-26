@@ -64,12 +64,19 @@
     }
 }
 
-.p-main-visual--single{
-    background-image: url(/img/single-visual.jpg);
+.p-main-visual--single,.p-main-visual--page{
     background-size:cover;
     background-position: center;
     height: 225px;
     @include tab{
         height: 500px;
     }
+}
+
+.p-main-visual--single{
+    background-image: url(/img/single-visual.jpg);
+}
+
+.p-main-visual--page{
+    background-image: url(/img/page-visual.jpg);
 }
