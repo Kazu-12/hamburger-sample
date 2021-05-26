@@ -711,7 +711,7 @@ Object/project
   font-family: "M+ 1m";
   font-weight: bold;
   font-size: 36px;
-  margin-left: 15px;
+  margin-left: 5%;
 }
 
 @media (min-width: 768px) {
@@ -725,11 +725,18 @@ Object/project
   font-family: "M+ 1m";
   font-weight: bold;
   font-size: 16px;
-  margin-left: 15px;
+  margin-left: 5%;
+}
+
+@media (min-width: 768px) {
+  .p-main-visual p {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
 }
 
 .p-main-visual--front-page {
-  background-image: url(/img/main-visual.jpg);
+  background-image: url(../img/main-visual.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -747,9 +754,13 @@ Object/project
 }
 
 .p-main-visual--archive {
-  background-image: url(/img/archive-main.jpg);
+  background-image: url(../img/archive-main.jpg);
   background-size: auto;
   background-position: 25% 45%;
+}
+
+.p-main-visual--archive h1 {
+  font-family: roboto;
 }
 
 @media (min-width: 1201px) {
@@ -790,11 +801,11 @@ Object/project
 }
 
 .p-main-visual--single {
-  background-image: url(/img/single-visual.jpg);
+  background-image: url(../img/single-visual.jpg);
 }
 
 .p-main-visual--page {
-  background-image: url(/img/page-visual.jpg);
+  background-image: url(../img/page-visual.jpg);
 }
 
 .p-map__back {

@@ -12,7 +12,7 @@
         font-family: "M+ 1m";
         font-weight: bold;
         font-size: 36px;
-        margin-left: 15px;
+        margin-left: 5%;
         @include tab{
             font-size: 60px;
         }
@@ -22,12 +22,16 @@
         font-family: "M+ 1m";
         font-weight: bold;
         font-size: 16px;
-        margin-left: 15px;
+        margin-left: 5%;
+        @include tab{
+            margin-top: 10px;
+            margin-left: 15px;
+        }
     }
 }
 
 .p-main-visual--front-page{
-    background-image: url(/img/main-visual.jpg);
+    background-image: url(../img/main-visual.jpg);
     background-size:cover;
     background-position: center;
     h1{
@@ -41,9 +45,12 @@
 }
 
 .p-main-visual--archive{
-    background-image: url(/img/archive-main.jpg);
+    background-image: url(../img/archive-main.jpg);
     background-size:auto;
     background-position: 25% 45%;
+    h1{
+        font-family: roboto;
+    }
     @include pc{
         height: 240px;
     }
@@ -74,9 +81,9 @@
 }
 
 .p-main-visual--single{
-    background-image: url(/img/single-visual.jpg);
+    background-image: url(../img/single-visual.jpg);
 }
 
 .p-main-visual--page{
-    background-image: url(/img/page-visual.jpg);
+    background-image: url(../img/page-visual.jpg);
 }
