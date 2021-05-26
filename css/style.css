@@ -531,6 +531,17 @@ Object/component
   text-align: center;
 }
 
+.c-quote {
+  background-color: #F5F5F5;
+  padding: 10% 5%;
+  width: 100%;
+}
+
+.c-quote cite {
+  display: block;
+  padding-top: 10%;
+}
+
 /*======================================
 Object/project
 ========================================*/
@@ -644,6 +655,12 @@ Object/project
   margin: 5% 5% 2.5%;
 }
 
+@media (min-width: 768px) {
+  .p-main-description h2 {
+    font-size: 36px;
+  }
+}
+
 .p-main-description p {
   font-size: 16px;
   margin: 2.5% 5% 5%;
@@ -659,6 +676,12 @@ Object/project
 
 .p-main-description__headline h3 {
   font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .p-main-description__headline h3 {
+    font-size: 28px;
+  }
 }
 
 .p-main-description__headline h4 {
@@ -685,13 +708,21 @@ Object/project
 
 .p-main-visual h1 {
   color: #fff;
+  font-family: "M+ 1m";
   font-weight: bold;
   font-size: 36px;
   margin-left: 15px;
 }
 
+@media (min-width: 768px) {
+  .p-main-visual h1 {
+    font-size: 60px;
+  }
+}
+
 .p-main-visual p {
   color: #fff;
+  font-family: "M+ 1m";
   font-weight: bold;
   font-size: 16px;
   margin-left: 15px;
@@ -701,6 +732,18 @@ Object/project
   background-image: url(/img/main-visual.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 768px) {
+  .p-main-visual--front-page h1 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .p-main-visual--front-page h1 {
+    font-size: 40px;
+  }
 }
 
 .p-main-visual--archive {
@@ -739,6 +782,12 @@ Object/project
   background-size: cover;
   background-position: center;
   height: 225px;
+}
+
+@media (min-width: 768px) {
+  .p-main-visual--single {
+    height: 500px;
+  }
 }
 
 .p-map__back {
@@ -966,17 +1015,6 @@ Object/project
   font-size: 20px;
 }
 
-.c-quote {
-  background-color: #F5F5F5;
-  padding: 10% 5%;
-  width: 100%;
-}
-
-.c-quote cite {
-  display: block;
-  padding-top: 10%;
-}
-
 .p-menu-detail__top-visual {
   width: 100%;
   object-fit: cover;
@@ -992,7 +1030,7 @@ Object/project
   font-size: 16px;
   font-family: "M+ 1m";
   width: 50%;
-  height: 45vw;
+  max-height: 45vw;
   overflow: hidden;
 }
 
@@ -1008,8 +1046,35 @@ Object/project
 }
 
 .p-menu-detail__mid-visual {
-  width: 100%;
-  padding: 10%;
+  text-align: center;
+}
+
+.p-menu-detail__mid-visual img {
+  width: 267px;
+  margin: 10% 0;
+}
+
+@media (min-width: 768px) {
+  .p-menu-detail__mid-visual img {
+    width: 581px;
+    margin-bottom: 30%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .p-menu-detail__mid-visual img {
+    margin: 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-menu-detail__img-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
 .p-menu-detail__img-list img {
@@ -1017,8 +1082,27 @@ Object/project
   margin-bottom: 5%;
 }
 
+@media (min-width: 768px) {
+  .p-menu-detail__img-list img {
+    width: 49%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .p-menu-detail__img-list img {
+    width: 32%;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-single-list {
+    padding: 5%;
+  }
+}
+
 .p-single-list ul {
-  margin-bottom: 5%;
+  margin-bottom: 16px;
 }
 
 .p-single-list li {
@@ -1028,7 +1112,7 @@ Object/project
 }
 
 .p-single-list__num-list {
-  margin-bottom: 15%;
+  margin-bottom: 60px;
 }
 
 .p-single-list__num-list--2, .p-single-list__normal-list--2 {
@@ -1037,8 +1121,7 @@ Object/project
 
 .p-single-html-code {
   background-color: #F5F5F5;
-  padding: 10%;
-  margin: 5% 0;
+  padding: 40px;
 }
 
 .p-single-html-code p {
@@ -1049,7 +1132,7 @@ Object/project
 .c-table {
   width: 100%;
   height: 305px;
-  margin: 10% 0;
+  margin: 40px 0;
   border-collapse: collapse;
   background-color: #fff;
 }
@@ -1058,7 +1141,7 @@ Object/project
   border: solid 1px;
   font-size: 16px;
   font-family: "M+ 1m";
-  padding-left: 10%;
+  padding-left: 30px;
 }
 
 .c-table__left {
@@ -1089,6 +1172,12 @@ Object/project
   font-weight: bold;
   color: #3C2A10;
   background-color: #F2EDE9;
+}
+
+@media (min-width: 768px) {
+  .c-single-button {
+    width: 429px;
+  }
 }
 
 .p-single-page-contents {

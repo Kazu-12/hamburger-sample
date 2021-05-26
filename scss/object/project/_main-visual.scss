@@ -9,12 +9,17 @@
     
     & h1{
         color: #fff;
+        font-family: "M+ 1m";
         font-weight: bold;
         font-size: 36px;
         margin-left: 15px;
+        @include tab{
+            font-size: 60px;
+        }
     }
     & p{
         color: #fff;
+        font-family: "M+ 1m";
         font-weight: bold;
         font-size: 16px;
         margin-left: 15px;
@@ -25,6 +30,14 @@
     background-image: url(/img/main-visual.jpg);
     background-size:cover;
     background-position: center;
+    h1{
+        @include tab{
+            font-size: 36px;    
+        }
+        @include pc{
+            font-size: 40px;
+        }
+    }
 }
 
 .p-main-visual--archive{
@@ -56,4 +69,7 @@
     background-size:cover;
     background-position: center;
     height: 225px;
+    @include tab{
+        height: 500px;
+    }
 }
