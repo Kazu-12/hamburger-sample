@@ -4,10 +4,32 @@
     & h2{
         font-size: 28px;
         font-weight: bold;
-        margin: 2% 5%;
+        margin:5% 5% 2.5%;
     }
     & p{
         font-size: 16px;
-        margin: 2% 5%;
+        margin:2.5% 5% 5%;
+    }
+}
+
+.p-main-description__headline{
+    *{
+        margin:5% 0;
+    }
+    h2,p{
+        margin:5% 0 2.5%;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 20px;
+    }
+}
+
+.p-main-description__subhead{
+    h3,h4,h5,h6{
+        font-size: 20px;
+        margin:5% 0;
     }
 }

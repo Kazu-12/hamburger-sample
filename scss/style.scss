@@ -31,3 +31,127 @@ Object/project
 @import "./object/project/search";
 @import "./object/project/sidebar";
 
+.c-quote{
+    background-color: #F5F5F5;
+    padding:10% 5%;
+    width: 100%;
+    cite{
+        display: block;
+        padding-top: 10%;
+
+    }
+}
+
+.p-menu-detail{
+    &__top-visual{
+        width: 100%;
+        object-fit: cover;
+        margin: 10% 0;
+    }
+    &__description1,&__description2{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-size: 16px;
+            font-family: "M+ 1m";
+            width: 50%;
+            height: 45vw;
+            overflow: hidden;
+        }
+        img{
+            align-self: flex-start;
+            width: 45%;
+            object-fit: contain;
+            display: flex;
+        }
+    }
+    &__description2{
+        margin-top: 10%;
+    }
+    &__mid-visual{
+        width: 100%;
+        padding: 10%;
+    }
+
+    &__img-list img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}
+
+.p-single-list{
+    ul{
+        margin-bottom: 5%;
+    }
+    li{
+        list-style: none;
+        font-size: 16px;
+        font-family: "M+ 1m";
+    }
+    &__num-list{
+        margin-bottom: 15%;
+    }
+    &__num-list--2,&__normal-list--2{
+        padding-left: 5%;
+    }
+}
+
+.p-single-html-code{
+    background-color: #F5F5F5;
+    padding: 10%;
+    margin: 5% 0;
+    p{
+        font-size: 16px;
+        font-family: "M+ 1m";
+    }
+}
+
+.c-table{
+    width: 100%;
+    height: 305px;
+    margin: 10% 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    td{
+        border: solid 1px;
+        font-size: 16px;
+        font-family: "M+ 1m";
+        padding-left: 10%;
+    }
+    &__left{
+        width: 40%;
+    }
+    &__right{
+        width: 60%;
+    }
+    @include tab{
+        &__left{
+            width: 33%;
+        }
+        &__right{
+            width: 67%;
+        }
+    }
+}
+
+.c-single-button{
+    margin-bottom: 10%;
+    width: 100%;
+    height: 81px;
+    border-radius: 20px;
+    border: solid 1px;
+    font-size: 16px;
+    font-family: "M+ 1m";
+    font-weight: bold;
+    color: #3C2A10;
+    background-color: #F2EDE9;
+}
+
+.p-single-page-contents{
+    padding-bottom: 75px;
+    &__txt{
+        font-size: 16px;
+        font-family: "M+ 1m";
+        font-weight: bold;
+    }
+}

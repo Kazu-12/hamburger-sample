@@ -7,7 +7,7 @@
         height: 530px;
     }
     
-    & h2{
+    & h1{
         color: #fff;
         font-weight: bold;
         font-size: 36px;
@@ -22,13 +22,13 @@
 }
 
 .p-main-visual--front-page{
-    background-image: url(../img/main-visual.jpg);
+    background-image: url(/img/main-visual.jpg);
     background-size:cover;
     background-position: center;
 }
 
 .p-main-visual--archive{
-    background-image: url(../img/archive-main.jpg);
+    background-image: url(/img/archive-main.jpg);
     background-size:auto;
     background-position: 25% 45%;
     @include pc{
@@ -49,4 +49,11 @@
             align-items: center;
         }
     }
+}
+
+.p-main-visual--single{
+    background-image: url(/img/single-visual.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 225px;
 }
