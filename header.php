@@ -10,18 +10,15 @@
     <script src="./js/script.js"></script>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <div class="l-contents">
         <div class="l-contents__left">
             <header class="l-header">
                 <div class="c-button"><a class="c-button__menu">Menu</a></div>
                 <div class="p-header-title">
-                    <h1>Hamburger</h1>
-                    <div class="p-search">
-                        <div class="p-search__box">
-                            <input class="p-search__txt" type="text" name="search">
-                        </div>
-                        <input class="p-search__button" type="submit" value="検索">
-                    </div>
+                    <h1>
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo( 'name' ) ?></a>
+                    </h1>
+                    <?php get_search_form(); ?>
                 </div>
             </header>
