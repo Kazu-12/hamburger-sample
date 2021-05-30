@@ -23,3 +23,6 @@
         wp_enqueue_script('script' , get_template_directory_uri() . '/js/script.js' , array() , '1.0.0');
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
+
+    //htmlのmargin-top対策
+    add_filter('show_admin_bar', '__return_false');
