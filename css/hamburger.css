@@ -623,6 +623,11 @@ Object/project
   margin: 10px;
 }
 
+.p-branch-menu__take-out h2::after, .p-branch-menu__eat-in h2::after {
+  content: "__";
+  display: block;
+}
+
 @media (min-width: 768px) {
   .p-branch-menu__take-out, .p-branch-menu__eat-in {
     height: 680px;
@@ -1023,7 +1028,7 @@ Object/project
   content: "";
   width: 46px;
   height: 46px;
-  background-image: url(/img/search.svg);
+  background-image: url(../img/search.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
