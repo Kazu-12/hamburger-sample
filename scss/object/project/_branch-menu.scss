@@ -1,6 +1,6 @@
 .p-branch-menu{
     margin: 3%;
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
     @include tab{
         //margin: 30px;
         ul{
@@ -19,6 +19,10 @@
             color: #fff;
             font-size: 40px;
             margin: 10px;
+            &::after{
+                content: "__";
+                display: block;
+            }
         }
         @include tab{
             height: 680px;
