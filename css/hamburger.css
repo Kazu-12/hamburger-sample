@@ -1062,35 +1062,40 @@ Object/project
   border-radius: 10px;
 }
 
-.p-sidebar li {
-  list-style: none;
+.p-sidebar__menu--main {
+  margin: 200px 0px;
+  padding: 0 50px;
+}
+
+.p-sidebar .widget_categories {
+  color: #707070;
   font-family: "M+ 1m";
 }
 
-.p-sidebar a {
+.p-sidebar .widget_categories h2 {
+  display: none;
+}
+
+.p-sidebar .widget_categories li {
+  list-style: none;
+}
+
+.p-sidebar .widget_categories a {
   display: block;
   color: #707070;
   text-decoration: none;
   white-space: nowrap;
 }
 
-.p-sidebar__menu--main {
-  margin: 200px 0px;
-  padding: 0 50px;
-}
-
-.p-sidebar__menu--main > li {
+.p-sidebar .widget_categories > ul > li > a {
   font-size: 24px;
-}
-
-.p-sidebar__menu--main > li > a {
   padding: 20px 0;
   font-weight: bold;
 }
 
-.p-sidebar__menu--sub > li {
-  padding: 10px;
+.p-sidebar .widget_categories .children a {
   font-size: 20px;
+  padding: 10px;
 }
 
 .p-menu-detail__top-visual {

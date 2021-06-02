@@ -1,29 +1,33 @@
 .p-sidebar{
-    li{
-        list-style: none;
-        font-family: "M+ 1m";
-    }
-    a{
-        display: block;
-        color: #707070;
-        text-decoration: none;
-        white-space: nowrap;
-    }
     &__menu--main{
         margin: 200px 0px;
         padding:0 50px;
-        & > li{
-            font-size: 24px;
-            >a{
-                padding:20px 0;
-                font-weight: bold;
-            }
-        }
     }
-    &__menu--sub{
-        & > li{
-            padding:10px;
-            font-size: 20px;
+    .widget_categories{
+        color: #707070;
+        font-family: "M+ 1m";
+        h2{
+            display: none;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            display: block;
+            color: #707070;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        & > ul > li > a{
+            font-size: 24px;
+            padding:20px 0;
+            font-weight: bold;
+        }
+        .children{
+            a{
+                font-size: 20px;
+                padding:10px;
+            }
         }
     }
 }
