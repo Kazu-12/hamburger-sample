@@ -4,21 +4,41 @@
     align-items: flex-end;
     justify-content: center;
     margin: 20px;
-    & ul{
-        width: 100%;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+}
+
+.wp-pagenavi{
+    padding:0 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    
+    a{
         color: #707070;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 16px;
+        text-decoration: none;
+    }
+    .page,.current{
+        width: 35px;
+        height: 35px;
+        border: solid;
+        border-color: #707070;
+        display: none;
         @include tab{
-            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
-    &__nav{
+    @include tab{
+        padding: 0;
+        width: 600px;
+    }
+
+    .pages{
         display: none;
         @include tab{
             display: block;
@@ -36,20 +56,45 @@
             }
         }
     } 
-    &__num{
-        width: 35px;
-        height: 35px;
-        border: solid;
-        border-color: #707070;
-        display: none;
-        @include tab{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    .current-page{
+    .current{
         background-color: #3C2B1C;
         color: #fff;
+    }
+    .previouspostslink,.nextpostslink{
+        position: relative;
+        height: 35px;
+        line-height: 35px;
+        & > span{
+            @include tab{
+                display: none;
+            }
+        }
+    }
+    .previouspostslink::before{
+        content: "";
+        width: 35px;
+        height: 35px;
+        background-image: url(../img/pre.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: -35px;
+        @include tab{
+            display: inline-block;
+            position: static;
+        }
+    }
+    .nextpostslink::after{
+        content: "";
+        width: 35px;
+        height: 35px;
+        background-image: url(../img/post.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        @include tab{
+            display: inline-block;
+            position: static;
+        }
     }
 }

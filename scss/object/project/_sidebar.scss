@@ -3,7 +3,7 @@
         margin: 200px 0px;
         padding:0 50px;
     }
-    .widget_categories{
+    .sidebar{
         color: #707070;
         font-family: "M+ 1m";
         h2{
@@ -12,22 +12,24 @@
         li{
             list-style: none;
         }
+    }
+    .menu-item{
         a{
             display: block;
             color: #707070;
             text-decoration: none;
             white-space: nowrap;
-        }
-        & > ul > li > a{
             font-size: 24px;
             padding:20px 0;
             font-weight: bold;
         }
-        .children{
-            a{
-                font-size: 20px;
-                padding:10px;
-            }
+    }
+    .sub-menu{
+        a{
+            font-size: 20px;
+            font-weight: 400;
+            padding:10px;
         }
     }
+
 }

@@ -469,6 +469,8 @@ Object/component
 }
 
 .c-menu-card {
+  display: flex;
+  flex-direction: column;
   background-color: #3C2B1C;
   margin: 2% 5%;
   height: 585px;
@@ -476,7 +478,7 @@ Object/component
 
 @media (min-width: 768px) {
   .c-menu-card {
-    display: flex;
+    flex-direction: row;
     height: 354px;
   }
 }
@@ -505,22 +507,36 @@ Object/component
   font-family: "M+ 1m";
 }
 
-.c-menu-card h3 {
+.c-menu-card h1 {
   font-size: 20px;
   font-weight: bold;
-  margin: 5%;
+  margin: 3% 5%;
 }
 
-.c-menu-card h4 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 10px 5%;
+@media (min-width: 1201px) {
+  .c-menu-card h1 {
+    font-size: 36px;
+  }
 }
 
 .c-menu-card__txt {
+  margin: 10px 20% 10px 5%;
+  height: 215px;
   font-size: 16px;
   font-weight: 400;
-  margin: 10px 20% 10px 5%;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .c-menu-card__txt {
+    height: 50%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .c-menu-card__txt {
+    font-size: 24px;
+  }
 }
 
 .c-menu-card__detail-btn {
@@ -960,9 +976,9 @@ Object/project
   margin: 20px;
 }
 
-.p-pagination ul {
+.wp-pagenavi {
+  padding: 0 30px;
   width: 100%;
-  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -972,38 +988,12 @@ Object/project
   font-size: 16px;
 }
 
-@media (min-width: 768px) {
-  .p-pagination ul {
-    width: 600px;
-  }
+.wp-pagenavi a {
+  color: #707070;
+  text-decoration: none;
 }
 
-.p-pagination__nav {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .p-pagination__nav {
-    display: block;
-  }
-}
-
-.p-pagination__arrow a {
-  display: flex;
-  align-items: center;
-}
-
-.p-pagination__arrow span {
-  font-weight: 400;
-}
-
-@media (min-width: 768px) {
-  .p-pagination__arrow span {
-    display: none;
-  }
-}
-
-.p-pagination__num {
+.wp-pagenavi .page, .wp-pagenavi .current {
   width: 35px;
   height: 35px;
   border: solid;
@@ -1012,16 +1002,95 @@ Object/project
 }
 
 @media (min-width: 768px) {
-  .p-pagination__num {
+  .wp-pagenavi .page, .wp-pagenavi .current {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-.p-pagination .current-page {
+@media (min-width: 768px) {
+  .wp-pagenavi {
+    padding: 0;
+    width: 600px;
+  }
+}
+
+.wp-pagenavi .pages {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .wp-pagenavi .pages {
+    display: block;
+  }
+}
+
+.wp-pagenavi__arrow a {
+  display: flex;
+  align-items: center;
+}
+
+.wp-pagenavi__arrow span {
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .wp-pagenavi__arrow span {
+    display: none;
+  }
+}
+
+.wp-pagenavi .current {
   background-color: #3C2B1C;
   color: #fff;
+}
+
+.wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+  position: relative;
+  height: 35px;
+  line-height: 35px;
+}
+
+@media (min-width: 768px) {
+  .wp-pagenavi .previouspostslink > span, .wp-pagenavi .nextpostslink > span {
+    display: none;
+  }
+}
+
+.wp-pagenavi .previouspostslink::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/pre.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: -35px;
+}
+
+@media (min-width: 768px) {
+  .wp-pagenavi .previouspostslink::before {
+    display: inline-block;
+    position: static;
+  }
+}
+
+.wp-pagenavi .nextpostslink::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/post.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .wp-pagenavi .nextpostslink::after {
+    display: inline-block;
+    position: static;
+  }
 }
 
 .p-search {
@@ -1078,34 +1147,32 @@ Object/project
   padding: 0 50px;
 }
 
-.p-sidebar .widget_categories {
+.p-sidebar .sidebar {
   color: #707070;
   font-family: "M+ 1m";
 }
 
-.p-sidebar .widget_categories h2 {
+.p-sidebar .sidebar h2 {
   display: none;
 }
 
-.p-sidebar .widget_categories li {
+.p-sidebar .sidebar li {
   list-style: none;
 }
 
-.p-sidebar .widget_categories a {
+.p-sidebar .menu-item a {
   display: block;
   color: #707070;
   text-decoration: none;
   white-space: nowrap;
-}
-
-.p-sidebar .widget_categories > ul > li > a {
   font-size: 24px;
   padding: 20px 0;
   font-weight: bold;
 }
 
-.p-sidebar .widget_categories .children a {
+.p-sidebar .sub-menu a {
   font-size: 20px;
+  font-weight: 400;
   padding: 10px;
 }
 

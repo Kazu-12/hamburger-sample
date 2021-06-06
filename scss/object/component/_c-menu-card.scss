@@ -1,9 +1,11 @@
 .c-menu-card{
+    display: flex;
+    flex-direction: column;
     background-color: #3C2B1C;
     margin: 2% 5%;
     height: 585px;
     @include tab{
-        display: flex;
+        flex-direction: row;
         height: 354px;
     }
     @include pc{
@@ -22,20 +24,26 @@
         color: #fff;
         font-family: "M+ 1m";
     }
-    h3{
+    h1{
         font-size: 20px;
         font-weight: bold;
-        margin: 5%;
-    }
-    h4{
-        font-size: 16px;
-        font-weight: bold;
-        margin: 10px 5%;
+        margin: 3% 5%;
+        @include pc{
+            font-size:  36px;
+        }
     }
     &__txt{
+        margin: 10px 20% 10px 5%;
+        height: 215px;
         font-size: 16px;
         font-weight: 400;
-        margin: 10px 20% 10px 5%;
+        @include tab{
+            height: 50%;
+        }
+        @include pc{
+            font-size:  24px;
+        }
+        overflow: hidden;
     }
     &__detail-btn{
         width: 100%;
