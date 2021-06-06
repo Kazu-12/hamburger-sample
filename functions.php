@@ -31,10 +31,8 @@
                 'name'          => 'メニューウィジェット',
                 'id'            => 'menu_widget',
                 'description'   => 'メニュー用ウィジェットです',
-                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'before_widget' => '<div id="%1$s" class="sidebar %2$s">',
                 'after_widget'  => '</div>',
-                'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
-                'after_title'   => "</h2>\n",
             )
         );
     }
