@@ -18,16 +18,15 @@ Object/component
 ========================================*/
 @import "./object/component/_button.scss";
 @import "./object/component/c-menu-card";
-@import "./object/component/quote";
 @import "./object/component/table";
 @import "./object/component/single-button";
 
 /*======================================
 Object/project
 ========================================*/
+@import "./object/project/article";
 @import "./object/project/branch-menu";
 @import "./object/project/header-title";
-@import "./object/project/main-description";
 @import "./object/project/main-visual";
 @import "./object/project/map";
 @import "./object/project/p-footer";

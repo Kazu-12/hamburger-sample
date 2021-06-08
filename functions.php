@@ -37,3 +37,10 @@
         );
     }
     add_action( 'widgets_init', 'hamburger_widgets_init' );
+
+    register_nav_menus(
+        array(
+            'sidebar' => 'サイドバー',
+            'footer' => 'フッター',
+        )
+    );
