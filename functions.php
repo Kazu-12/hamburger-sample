@@ -44,3 +44,5 @@
             'footer' => 'フッター',
         )
     );
+
+    remove_filter( 'pre_term_description', 'wp_filter_kses' );

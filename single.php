@@ -7,7 +7,7 @@
                 <div class="p-main-visual p-main-visual--single">
                     <h1><?php the_title(); ?></h1>
                 </div>
-                <article class="p-article">
+                <article class="p-article--single">
                     <?php the_content(); ?>
                 </article>
         <?php endwhile; ?>

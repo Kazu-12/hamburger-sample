@@ -612,71 +612,6 @@ Object/component
 /*======================================
 Object/project
 ========================================*/
-.p-article {
-  color: #3C2A10;
-  font-family: "M+ 1m";
-  padding: 0 2.5%;
-}
-
-.p-article h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin: 5% 0 2.5%;
-}
-
-@media (min-width: 768px) {
-  .p-article h2 {
-    font-size: 36px;
-  }
-}
-
-.p-article p {
-  font-size: 16px;
-  margin: 2.5% 0 5%;
-}
-
-.p-article h3 {
-  font-size: 24px;
-}
-
-@media (min-width: 768px) {
-  .p-article h3 {
-    font-size: 28px;
-  }
-}
-
-.p-article h4, .p-article h5, .p-article h6 {
-  font-size: 20px;
-  margin: 5% 0;
-}
-
-.p-article .wp-block-quote {
-  background-color: #F5F5F5;
-  padding: 10% 5%;
-  width: 100%;
-}
-
-.p-article .wp-block-quote cite {
-  display: block;
-  padding-top: 10%;
-}
-
-.p-article .wp-block-image img {
-  width: 100%;
-  object-fit: cover;
-  margin: 5% 0;
-  height: 30vw;
-}
-
-.p-article .wp-block-media-text {
-  margin: 5% 0;
-}
-
-.p-article .wp-block-media-text img {
-  height: 50%;
-  object-fit: contain;
-}
-
 .p-branch-menu {
   margin: 3%;
   font-family: 'Roboto', sans-serif;
@@ -787,6 +722,108 @@ Object/project
 .p-header-title h1 a {
   color: #707070;
   text-decoration: none;
+}
+
+.p-main-description {
+  color: #3C2A10;
+  font-family: "M+ 1m";
+}
+
+.p-main-description h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5% 5% 2.5%;
+}
+
+@media (min-width: 768px) {
+  .p-main-description h2 {
+    font-size: 36px;
+  }
+}
+
+.p-main-description p {
+  font-size: 16px;
+  margin: 2.5% 5% 5%;
+}
+
+.p-menu-detail__top-visual {
+  width: 100%;
+  object-fit: cover;
+  margin: 10% 0;
+}
+
+.p-menu-detail__description1, .p-menu-detail__description2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-menu-detail__description1 p, .p-menu-detail__description2 p {
+  font-size: 16px;
+  font-family: "M+ 1m";
+  width: 50%;
+  max-height: 45vw;
+  overflow: hidden;
+}
+
+.p-menu-detail__description1 img, .p-menu-detail__description2 img {
+  align-self: flex-start;
+  width: 45%;
+  object-fit: contain;
+  display: flex;
+}
+
+.p-menu-detail__description2 {
+  margin-top: 10%;
+}
+
+.p-menu-detail__mid-visual {
+  text-align: center;
+}
+
+.p-menu-detail__mid-visual img {
+  width: 267px;
+  margin: 10% 0;
+}
+
+@media (min-width: 768px) {
+  .p-menu-detail__mid-visual img {
+    width: 581px;
+    margin-bottom: 30%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .p-menu-detail__mid-visual img {
+    margin: 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-menu-detail__img-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.p-menu-detail__img-list img {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 768px) {
+  .p-menu-detail__img-list img {
+    width: 49%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .p-menu-detail__img-list img {
+    width: 32%;
+  }
 }
 
 .p-main-visual {
@@ -902,6 +939,10 @@ Object/project
 
 .p-main-visual--page {
   background-image: url(../img/page-visual.jpg);
+}
+
+.p-map {
+  margin-left: 0;
 }
 
 .p-map__back {
@@ -1185,84 +1226,69 @@ Object/project
   padding: 10px;
 }
 
-.p-menu-detail__top-visual {
+.p-article--single {
+  color: #3C2A10;
+  font-family: "M+ 1m";
+  padding: 0 2.5%;
+}
+
+.p-article--single h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5% 0 2.5%;
+}
+
+@media (min-width: 768px) {
+  .p-article--single h2 {
+    font-size: 36px;
+  }
+}
+
+.p-article--single p {
+  font-size: 16px;
+  margin: 2.5% 0 5%;
+}
+
+.p-article--single h3 {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .p-article--single h3 {
+    font-size: 28px;
+  }
+}
+
+.p-article--single h4, .p-article--single h5, .p-article--single h6 {
+  font-size: 20px;
+  margin: 5% 0;
+}
+
+.p-article--single .wp-block-quote {
+  background-color: #F5F5F5;
+  padding: 10% 5%;
+  width: 100%;
+}
+
+.p-article--single .wp-block-quote cite {
+  display: block;
+  padding-top: 10%;
+}
+
+.p-article--single .wp-block-image img {
   width: 100%;
   object-fit: cover;
-  margin: 10% 0;
+  margin: 5% 0;
+  height: 30vw;
 }
 
-.p-menu-detail__description1, .p-menu-detail__description2 {
-  display: flex;
-  justify-content: space-between;
+.p-article--single .wp-block-media-text {
+  margin: 5% 0;
 }
 
-.p-menu-detail__description1 p, .p-menu-detail__description2 p {
-  font-size: 16px;
-  font-family: "M+ 1m";
-  width: 50%;
-  max-height: 45vw;
-  overflow: hidden;
-}
-
-.p-menu-detail__description1 img, .p-menu-detail__description2 img {
-  align-self: flex-start;
-  width: 45%;
+.p-article--single .wp-block-media-text img {
+  height: 50%;
   object-fit: contain;
-  display: flex;
-}
-
-.p-menu-detail__description2 {
-  margin-top: 10%;
-}
-
-.p-menu-detail__mid-visual {
-  text-align: center;
-}
-
-.p-menu-detail__mid-visual img {
-  width: 267px;
-  margin: 10% 0;
-}
-
-@media (min-width: 768px) {
-  .p-menu-detail__mid-visual img {
-    width: 581px;
-    margin-bottom: 30%;
-  }
-}
-
-@media (min-width: 1201px) {
-  .p-menu-detail__mid-visual img {
-    margin: 5%;
-  }
-}
-
-@media (min-width: 768px) {
-  .p-menu-detail__img-list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    flex-wrap: wrap;
-  }
-}
-
-.p-menu-detail__img-list img {
-  width: 100%;
-  margin-bottom: 5%;
-}
-
-@media (min-width: 768px) {
-  .p-menu-detail__img-list img {
-    width: 49%;
-    margin-bottom: 2%;
-  }
-}
-
-@media (min-width: 1201px) {
-  .p-menu-detail__img-list img {
-    width: 32%;
-  }
 }
 
 @media (min-width: 768px) {

@@ -8,7 +8,7 @@
         <div class="p-branch-menu">
             <ul>
                 <li class="p-branch-menu__take-out">
-                <a href="http://hamburger.local/category/takeout/"><h2>Take Out</h2></a>
+                <a href="<?php echo esc_url(get_category_link(26)); ?>"><h2>Take Out</h2></a>
                     <div class="p-branch-menu__txt">
                         <dl class="p-branch-menu__txt-box">
                             <dt>
@@ -25,7 +25,7 @@
                     </div>
                 </li>
                 <li class="p-branch-menu__eat-in">
-                <a href="http://hamburger.local/category/eatin/"><h2>Eat In</h2></a>
+                <a href="<?php echo esc_url(get_category_link(25)); ?>"><h2>Eat In</h2></a>
                     <div class="p-branch-menu__txt">
                         <dl class="p-branch-menu__txt-box">
                             <dt>
