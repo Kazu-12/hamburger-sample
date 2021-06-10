@@ -1,4 +1,4 @@
-.c-table{
+.c-table,.wp-block-table table{
     width: 100%;
     height: 305px;
     margin: 40px 0;
@@ -10,17 +10,17 @@
         font-family: "M+ 1m";
         padding-left: 30px;
     }
-    &__left{
+    tr td:first-of-type{
         width: 40%;
     }
-    &__right{
+    tr td:last-of-type{
         width: 60%;
     }
     @include tab{
-        &__left{
+        tr td:first-of-type{
             width: 33%;
         }
-        &__right{
+        tr td:last-of-type{
             width: 67%;
         }
     }

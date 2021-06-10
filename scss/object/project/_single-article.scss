@@ -24,7 +24,6 @@
         font-size: 20px;
         margin:5% 0;
     }
-
     .wp-block-quote{
         background-color: #F5F5F5;
         padding:10% 5%;
@@ -35,7 +34,6 @@
     
         }
     }
-
     .wp-block-image{
         img{
             width: 100%;
@@ -53,4 +51,12 @@
         }
     }
 
+    & > ul, & > ol{
+        padding:2.5% 0 0 24px ;
+        font-size: 16px;
+        font-family: "M+ 1m";
+        ul,ol{
+            padding-left: 10%;
+        }
     }
+}

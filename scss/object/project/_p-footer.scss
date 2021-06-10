@@ -2,14 +2,23 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #fff;
-    &__menu{
+    justify-content: space-around;
+    *{
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu-footermenu-container{
         & > ul{
             display: flex;
             list-style: none;
-            padding: 46px 0px;
-            & > p{
-                margin: 0 10px;
+            & li::before{
+                content: "|";
+                padding: 0 10px;
+                pointer-events:none;
+            }
+            & li:first-of-type::before{
+                display: none;
             }
         }
     }

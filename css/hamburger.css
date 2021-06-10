@@ -558,7 +558,7 @@ Object/component
   text-decoration: none;
 }
 
-.c-table {
+.c-table, .wp-block-table table {
   width: 100%;
   height: 305px;
   margin: 40px 0;
@@ -566,26 +566,26 @@ Object/component
   background-color: #fff;
 }
 
-.c-table td {
+.c-table td, .wp-block-table table td {
   border: solid 1px;
   font-size: 16px;
   font-family: "M+ 1m";
   padding-left: 30px;
 }
 
-.c-table__left {
+.c-table tr td:first-of-type, .wp-block-table table tr td:first-of-type {
   width: 40%;
 }
 
-.c-table__right {
+.c-table tr td:last-of-type, .wp-block-table table tr td:last-of-type {
   width: 60%;
 }
 
 @media (min-width: 768px) {
-  .c-table__left {
+  .c-table tr td:first-of-type, .wp-block-table table tr td:first-of-type {
     width: 33%;
   }
-  .c-table__right {
+  .c-table tr td:last-of-type, .wp-block-table table tr td:last-of-type {
     width: 67%;
   }
 }
@@ -995,17 +995,28 @@ Object/project
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: #fff;
+  justify-content: space-around;
 }
 
-.p-footer__menu > ul {
+.p-footer * {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
+
+.p-footer .menu-footermenu-container > ul {
   display: flex;
   list-style: none;
-  padding: 46px 0px;
 }
 
-.p-footer__menu > ul > p {
-  margin: 0 10px;
+.p-footer .menu-footermenu-container > ul li::before {
+  content: "|";
+  padding: 0 10px;
+  pointer-events: none;
+}
+
+.p-footer .menu-footermenu-container > ul li:first-of-type::before {
+  display: none;
 }
 
 .p-footer__copy {
@@ -1291,28 +1302,14 @@ Object/project
   object-fit: contain;
 }
 
-@media (min-width: 768px) {
-  .p-single-list {
-    padding: 5%;
-  }
-}
-
-.p-single-list ul {
-  margin-bottom: 16px;
-}
-
-.p-single-list li {
-  list-style: none;
+.p-article--single > ul, .p-article--single > ol {
+  padding: 2.5% 0 0 24px;
   font-size: 16px;
   font-family: "M+ 1m";
 }
 
-.p-single-list__num-list {
-  margin-bottom: 60px;
-}
-
-.p-single-list__num-list--2, .p-single-list__normal-list--2 {
-  padding-left: 5%;
+.p-article--single > ul ul, .p-article--single > ul ol, .p-article--single > ol ul, .p-article--single > ol ol {
+  padding-left: 10%;
 }
 
 .p-single-html-code {
