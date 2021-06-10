@@ -3,7 +3,7 @@
         'theme_location' => 'footer',
     )); ?>
     <div class="p-footer__copy">
-        <p>Copyright: RaiseTech</p>
+        <p>Copyright: <?php bloginfo( 'name' ) ?></p>
     </div>
 </footer>
 <?php wp_footer(); ?>
