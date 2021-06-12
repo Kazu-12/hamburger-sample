@@ -1,15 +1,18 @@
-.c-single-button{
+.wp-block-button{
     margin-bottom: 10%;
     width: 100%;
-    height: 81px;
-    border-radius: 20px;
-    border: solid 1px;
-    font-size: 16px;
-    font-family: "M+ 1m";
-    font-weight: bold;
-    color: #3C2A10;
-    background-color: #F2EDE9;
-    @include tab{
-        width: 429px;
+    &__link{
+        width: inherit;
+        height: 81px;
+        line-height: 55px;
+        border-radius: 20px;
+        border: solid 1px;
+        font-size: 16px;
+        font-family: "M+ 1m";
+        font-weight: bold;
+        color: #3C2A10;
+        @include tab{
+            width: 429px;
+        }
     }
 }

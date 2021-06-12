@@ -2,7 +2,7 @@
 
 <main class="l-main">
     <div class="p-main-visual p-main-visual--front-page">
-        <h1>ダミーサイト</h1>
+        <h1><?php bloginfo( 'description' ) ?></h1>
     </div>
     <article class="p-article">
         <div class="p-branch-menu">

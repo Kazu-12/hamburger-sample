@@ -45,4 +45,4 @@
         )
     );
 
-    remove_filter( 'pre_term_description', 'wp_filter_kses' );
+    remove_filter( 'pre_term_description', 'wp_filter_kses' );//説明でHTML使用可能に

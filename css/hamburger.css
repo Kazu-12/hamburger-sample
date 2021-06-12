@@ -590,23 +590,38 @@ Object/component
   }
 }
 
-.c-single-button {
+.wp-block-button {
   margin-bottom: 10%;
   width: 100%;
+}
+
+.wp-block-button__link {
+  width: inherit;
   height: 81px;
+  line-height: 55px;
   border-radius: 20px;
   border: solid 1px;
   font-size: 16px;
   font-family: "M+ 1m";
   font-weight: bold;
   color: #3C2A10;
-  background-color: #F2EDE9;
 }
 
 @media (min-width: 768px) {
-  .c-single-button {
+  .wp-block-button__link {
     width: 429px;
   }
+}
+
+.wp-block-quote {
+  background-color: #F5F5F5;
+  padding: 10% 5%;
+  width: 100%;
+}
+
+.wp-block-quote cite {
+  display: block;
+  padding-top: 10%;
 }
 
 /*======================================
@@ -1275,17 +1290,6 @@ Object/project
   margin: 5% 0;
 }
 
-.p-article--single .wp-block-quote {
-  background-color: #F5F5F5;
-  padding: 10% 5%;
-  width: 100%;
-}
-
-.p-article--single .wp-block-quote cite {
-  display: block;
-  padding-top: 10%;
-}
-
 .p-article--single .wp-block-image img {
   width: 100%;
   object-fit: cover;
@@ -1309,16 +1313,26 @@ Object/project
 }
 
 .p-article--single > ul ul, .p-article--single > ul ol, .p-article--single > ol ul, .p-article--single > ol ol {
-  padding-left: 10%;
+  padding-left: 24px;
 }
 
-.p-single-page-contents {
-  padding-bottom: 75px;
+.wp-block-gallery .blocks-gallery-item {
+  flex: 0 0 100%;
 }
 
-.p-single-page-contents__txt {
-  font-size: 16px;
-  font-family: "M+ 1m";
-  font-weight: bold;
+@media (min-width: 768px) {
+  .wp-block-gallery .blocks-gallery-item {
+    flex-basis: 48.5%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .wp-block-gallery .blocks-gallery-item {
+    flex-basis: 32%;
+  }
+}
+
+.blocks-gallery-grid {
+  justify-content: space-between;
 }
 /*# sourceMappingURL=hamburger.css.map */

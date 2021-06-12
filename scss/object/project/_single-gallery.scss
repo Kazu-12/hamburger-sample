@@ -1,0 +1,13 @@
+.wp-block-gallery .blocks-gallery-item {
+    flex:0 0 100%;
+    @include tab{
+        flex-basis: 48.5%;
+    }
+    @include pc{
+        flex-basis: 32%;
+    }
+}
+
+.blocks-gallery-grid{
+    justify-content: space-between;
+}
