@@ -15,6 +15,7 @@
     }
     add_filter('pre_get_document_title','hamburger_title');
 
+    //CSS,JS読み込み
     function hamburger_script(){
         wp_enqueue_style('google-roboto-pre','//fonts.gstatic.com');
         wp_enqueue_style('google-roboto-font','//fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -25,6 +26,7 @@
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
 
+    //Widget設定
     function hamburger_widgets_init() {
         register_sidebar (
             array(
@@ -38,6 +40,7 @@
     }
     add_action( 'widgets_init', 'hamburger_widgets_init' );
 
+    //menu位置設定
     register_nav_menus(
         array(
             'sidebar' => 'サイドバー',
@@ -45,4 +48,16 @@
         )
     );
 
-    remove_filter( 'pre_term_description', 'wp_filter_kses' );//説明でHTML使用可能に
+    //説明でHTML使用可能に
+    remove_filter( 'pre_term_description', 'wp_filter_kses' );
+
+    //search.phpの投稿表示を5に変更
+    function change_posts_per_page($query) {
+        if ( is_admin() || ! $query->is_main_query() )
+            return;
+     
+        if ( $query->is_search() ) {
+            $query->set( 'posts_per_page', '5' );
+        }
+    }
+    add_action( 'pre_get_posts', 'change_posts_per_page' );

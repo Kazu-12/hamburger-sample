@@ -14,9 +14,8 @@
         <div class="p-menu-list">
 
             <?php if (have_posts()) : ?>
-                <?php while (have_posts()) : ?>
+                <?php while (have_posts()) : the_post(); ?>
 
-                    <?php the_post(); ?>
                     <section class="c-menu-card">
                         <?php the_post_thumbnail(); ?>
                         <div class="c-menu-card__description">
@@ -32,8 +31,9 @@
 
                 <?php endwhile; ?>
             <?php else : ?>
-                <p>Menuが見つかりませんでした</p>
+                <p class="c-menu-card__non">Menuが見つかりませんでした</p>
             <?php endif; ?>
+
         </div>
     </article>
     <div class="p-pagination">
