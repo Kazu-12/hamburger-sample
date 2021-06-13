@@ -337,7 +337,7 @@ Layout
 
 .l-contents__left {
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 
 .l-contents__right {
@@ -930,7 +930,7 @@ Object/project
   position: absolute;
   z-index: -1;
   height: 225px;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   object-position: center;
 }

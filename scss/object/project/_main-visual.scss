@@ -89,7 +89,7 @@
         position: absolute;
         z-index: -1;
         height: 225px;
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
         object-position: center;
         @include tab{
