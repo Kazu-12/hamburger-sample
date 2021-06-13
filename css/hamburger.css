@@ -337,6 +337,7 @@ Layout
 
 .l-contents__left {
   height: 100%;
+  width: 100%;
 }
 
 .l-contents__right {
@@ -591,7 +592,7 @@ Object/component
 }
 
 .wp-block-button {
-  margin-bottom: 10%;
+  margin: 5% 0;
   width: 100%;
 }
 
@@ -813,34 +814,6 @@ Object/project
   }
 }
 
-@media (min-width: 768px) {
-  .p-menu-detail__img-list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    flex-wrap: wrap;
-  }
-}
-
-.p-menu-detail__img-list img {
-  width: 100%;
-  margin-bottom: 5%;
-}
-
-@media (min-width: 768px) {
-  .p-menu-detail__img-list img {
-    width: 49%;
-    margin-bottom: 2%;
-  }
-}
-
-@media (min-width: 1201px) {
-  .p-menu-detail__img-list img {
-    width: 32%;
-  }
-}
-
 .p-main-visual {
   width: 100%;
   height: 285px;
@@ -948,8 +921,30 @@ Object/project
   }
 }
 
-.p-main-visual--single {
-  background-image: url(../img/single-visual.jpg);
+.p-main-visual--single h1 {
+  position: relative;
+  background-color: rgba(136, 136, 136, 0.2);
+}
+
+.p-main-visual--single .wp-post-image {
+  position: absolute;
+  z-index: -1;
+  height: 225px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .p-main-visual--single .wp-post-image {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .p-main-visual--single .wp-post-image {
+    width: 80%;
+  }
 }
 
 .p-main-visual--page {
@@ -1252,6 +1247,26 @@ Object/project
   padding: 10px;
 }
 
+.wp-block-gallery .blocks-gallery-item {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+  .wp-block-gallery .blocks-gallery-item {
+    flex-basis: 48.5%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .wp-block-gallery .blocks-gallery-item {
+    flex-basis: 32%;
+  }
+}
+
+.blocks-gallery-grid {
+  justify-content: space-between;
+}
+
 .p-article--single {
   color: #3C2A10;
   font-family: "M+ 1m";
@@ -1316,23 +1331,13 @@ Object/project
   padding-left: 24px;
 }
 
-.wp-block-gallery .blocks-gallery-item {
-  flex: 0 0 100%;
+.wp-block-code {
+  background-color: #F5F5F5;
+  padding: 40px;
 }
 
-@media (min-width: 768px) {
-  .wp-block-gallery .blocks-gallery-item {
-    flex-basis: 48.5%;
-  }
-}
-
-@media (min-width: 1201px) {
-  .wp-block-gallery .blocks-gallery-item {
-    flex-basis: 32%;
-  }
-}
-
-.blocks-gallery-grid {
-  justify-content: space-between;
+.wp-block-code code {
+  font-size: 16px;
+  font-family: "M+ 1m";
 }
 /*# sourceMappingURL=hamburger.css.map */

@@ -39,24 +39,5 @@
         }
     }
 
-    &__img-list{
-        @include tab{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-content: flex-start;
-            flex-wrap: wrap;
-        }
-        img{
-            width: 100%;
-            margin-bottom: 5%;
-            @include tab{
-                width: 49%;
-                margin-bottom: 2%;
-            }
-            @include pc{
-                width: 32%;
-            }
-        }
-    }
+    
 }

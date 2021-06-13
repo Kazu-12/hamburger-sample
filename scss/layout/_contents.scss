@@ -2,6 +2,7 @@
     display: flex;
     &__left{
         height: 100%;
+        width: 100%;
     }
     &__right{
         position: fixed;
@@ -18,7 +19,6 @@
         overflow-y: auto;
         background-color: #F2EDE9;
         z-index: 110;
-        
     }
     &__right.open{
         right: 0;

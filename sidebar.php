@@ -1,5 +1,4 @@
     <div class="l-contents__right">
-
         <article class="l-contents__sidebar p-sidebar">
             <div class="c-button__menu-close">
                 <span class="c-button__menu-close__1"></span>

@@ -81,7 +81,24 @@
 }
 
 .p-main-visual--single{
-    background-image: url(../img/single-visual.jpg);
+    h1{
+        position: relative;
+        background-color: rgba($color: #888, $alpha: 0.2);
+    }
+    .wp-post-image{
+        position: absolute;
+        z-index: -1;
+        height: 225px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        @include tab{
+            height: 500px;
+        }
+        @include pc{
+            width: 80%;
+        }
+    }
 }
 
 .p-main-visual--page{
