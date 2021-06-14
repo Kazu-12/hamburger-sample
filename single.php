@@ -2,15 +2,14 @@
 
 <main class="l-main--single">
     <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : ?>
-            <?php the_post(); ?>
-                <div class="p-main-visual p-main-visual--single">
-                    <h1><?php the_title(); ?></h1>
-                    <?php the_post_thumbnail(); ?>
-                </div>
-                <article class="p-article--single">
-                    <?php the_content(); ?>
-                </article>
+        <?php while (have_posts()) : the_post(); ?>
+            <div class="p-main-visual p-main-visual--single">
+                <h1><?php the_title(); ?></h1>
+                <?php the_post_thumbnail(); ?>
+            </div>
+            <article class="p-article--single">
+                <?php the_content(); ?>
+            </article>
         <?php endwhile; ?>
     <?php else : ?>
         <p>Menuが見つかりませんでした</p>

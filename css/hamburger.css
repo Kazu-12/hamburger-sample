@@ -642,67 +642,67 @@ Object/component
 /*======================================
 Object/project
 ========================================*/
-.p-article--single {
+.p-article--single, .p-article--page {
   color: #3C2A10;
   font-family: "M+ 1m";
   padding: 0 2.5%;
 }
 
-.p-article--single h2 {
+.p-article--single h2, .p-article--page h2 {
   font-size: 28px;
   font-weight: bold;
   margin: 5% 0 2.5%;
 }
 
 @media (min-width: 768px) {
-  .p-article--single h2 {
+  .p-article--single h2, .p-article--page h2 {
     font-size: 36px;
   }
 }
 
-.p-article--single p {
+.p-article--single p, .p-article--page p {
   font-size: 16px;
   margin: 2.5% 0 5%;
 }
 
-.p-article--single h3 {
+.p-article--single h3, .p-article--page h3 {
   font-size: 24px;
 }
 
 @media (min-width: 768px) {
-  .p-article--single h3 {
+  .p-article--single h3, .p-article--page h3 {
     font-size: 28px;
   }
 }
 
-.p-article--single h4, .p-article--single h5, .p-article--single h6 {
+.p-article--single h4, .p-article--single h5, .p-article--single h6, .p-article--page h4, .p-article--page h5, .p-article--page h6 {
   font-size: 20px;
   margin: 5% 0;
 }
 
-.p-article--single .wp-block-image img {
+.p-article--single .wp-block-image img, .p-article--page .wp-block-image img {
   width: 100%;
   object-fit: cover;
   margin: 5% 0;
   height: 30vw;
 }
 
-.p-article--single .wp-block-media-text {
+.p-article--single .wp-block-media-text, .p-article--page .wp-block-media-text {
   margin: 5% 0;
 }
 
-.p-article--single .wp-block-media-text img {
+.p-article--single .wp-block-media-text img, .p-article--page .wp-block-media-text img {
   height: 50%;
   object-fit: contain;
 }
 
-.p-article--single > ul, .p-article--single > ol {
+.p-article--single > ul, .p-article--single > ol, .p-article--page > ul, .p-article--page > ol {
   padding: 2.5% 0 0 24px;
   font-size: 16px;
   font-family: "M+ 1m";
 }
 
-.p-article--single > ul ul, .p-article--single > ul ol, .p-article--single > ol ul, .p-article--single > ol ol {
+.p-article--single > ul ul, .p-article--single > ul ol, .p-article--single > ol ul, .p-article--single > ol ol, .p-article--page > ul ul, .p-article--page > ul ol, .p-article--page > ol ul, .p-article--page > ol ol {
   padding-left: 24px;
 }
 
