@@ -1,4 +1,4 @@
-<form class="p-search" method="get" action="<?PHP echo home_url('/'); ?>">
+<form class="p-search" method="get" action="<?PHP echo esc_url(home_url('/')); ?>">
     <div class="p-search__box">
         <input class="p-search__txt" type="text" name="s" id="s" value="<?php the_search_query(); ?>">
     </div>

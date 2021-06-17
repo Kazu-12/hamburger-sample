@@ -4,6 +4,7 @@ Foundation
 @import "./foundation/base";
 @import "./foundation/mixin";
 @import "./foundation/reset";
+@import "./foundation/wp-class";
 
 /*======================================
 Layout
@@ -21,6 +22,7 @@ Object/component
 @import "./object/component/table";
 @import "./object/component/single-button";
 @import "./object/component/quote";
+@import "./object/component/tag";
 
 /*======================================
 Object/project

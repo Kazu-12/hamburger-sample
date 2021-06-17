@@ -1,4 +1,4 @@
-.p-pagination{
+.p-pagination,.p-page-link{
     height: 15vh;
     display: flex;
     align-items: flex-end;
@@ -6,7 +6,7 @@
     margin: 20px;
 }
 
-.wp-pagenavi{
+.wp-pagenavi,.p-page-link p{
     padding:0 30px;
     width: 100%;
     display: flex;
@@ -20,6 +20,10 @@
     a{
         color: #707070;
         text-decoration: none;
+        margin:0 5px;
+    }
+    .extend{
+        display: none;
     }
     .page,.current{
         width: 35px;
@@ -27,6 +31,7 @@
         border: solid;
         border-color: #707070;
         display: none;
+        margin:0 5px;
         @include tab{
             display: flex;
             justify-content: center;
@@ -35,13 +40,15 @@
     }
     @include tab{
         padding: 0;
-        width: 600px;
+        width: auto;
+        max-width: 600px;
     }
 
     .pages{
         display: none;
         @include tab{
             display: block;
+            margin-right: 5px;
         }
     }
     &__arrow{
@@ -69,6 +76,9 @@
                 display: none;
             }
         }
+    }
+    .nextpostslink{
+        margin-left: auto;
     }
     .previouspostslink::before{
         content: "";
