@@ -1293,6 +1293,7 @@ Object/project
 
 .wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink, .p-page-link p .previouspostslink, .p-page-link p .nextpostslink {
   position: relative;
+  margin: 0;
   height: 35px;
   line-height: 35px;
 }
@@ -1316,6 +1317,7 @@ Object/project
   background-position: center;
   position: absolute;
   right: 35px;
+  bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -1334,6 +1336,7 @@ Object/project
   background-position: center;
   position: absolute;
   left: 35px;
+  bottom: 0;
 }
 
 @media (min-width: 768px) {
