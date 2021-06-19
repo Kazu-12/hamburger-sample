@@ -1315,7 +1315,7 @@ Object/project
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  left: -35px;
+  right: 35px;
 }
 
 @media (min-width: 768px) {
@@ -1333,6 +1333,7 @@ Object/project
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
+  left: 35px;
 }
 
 @media (min-width: 768px) {
